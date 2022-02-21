@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-size: 18px;
+  font-family: fontawesome 6;
+  line-height: 20px;
+  color: #5f5f5f;
+  background-color: #f9f9f9;
+}
+
+.nav-item a, a{
+  color: #b1b4bd;
+  font-weight: 500;
+}
+
+.nav-item a:hover{
+  color: #339972;
+}
+
+a:hover {
+  color: #339972;
+}
+
+.header-background{
+  position: static;
+  display: block;
+  overflow: visible;
+  top: 0;
+  height: auto;
+  min-height: 750px;
+  padding-bottom: 70px;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, rgba(50,58,69,0.55), rgba(50,58,69, 0.74)), url(monkey_images/bgri.jpg);
+  background-position: 0px 0px, 100% 50%;
+  background-size: auto, cover;
+  white-space: normal;
+  object-fit: fill;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+}
+
+#hbg {
+  /*background-image: url(monkey_images/download.jfif);*/
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+  z-index: 1;
+  align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  background-color: rgba(12, 32, 59, 0.5);
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order:0;
+}
+
+.navbar .navbar-brand a {
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  color: white;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background-color: white;
+}
+
+.navbar-toggler span + span{
+  width: 22px;
+  margin-top: 4px;
+}
+
+.navbar-toggler span + span + span{
+  width: 22px;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Share Tech Mono';
+  color: #1f2933;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 180px;
+  min-height: 100px;
+}
+
+.heading:hover{
+  color: #339972;
+}
+
+#whoweare {
+  background-color: #1f2933;
+  color: #339972;
+}
+
+.column-left {
+  min-height: 750px;
+  background-image: linear-gradient(180deg, rgba(50,58,69,0.55), rgba(50,58,69, 0.74)), url(monkey_images/bgri1.jpg);
+  background-position: 0px 0px, 100% 50%;
+  background-size: auto, cover;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.section-title, .products-title{
+  margin-top: 40px;
+  padding: 0rem 2rem 0rem 5rem;
+  font-size: 3rem;
+  font-family: 'Share Tech Mono';
+  font-weight: 500;
+}
+
+#right-p{
+  margin-top: 40px;
+  padding: 0rem 2rem 0rem 5rem;
+  font-size: 1.4rem;
+  font-family: 'Share Tech Mono';
+  font-weight: 500;
+}
+
+.card-body {
+  background-color: #eeeeee;
+}
+
+#fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  background-color: #339972;
+}
+
+#oprd {
+  background-color: #1f2933;
+  color: #339972;
+}
+
+footer#footer-1 {
+  background-color: #1f2933;
+  font-family: 'Share Tech Mono';
+}
+
+.align{
+  text-align: center;
+  font-family: cursive;
+  position: relative;
+}
+.padding{
+  padding-right: 1rem;
+  position: fixed;
+
+}
+.row{
+  padding-left: 1rem;
+}
