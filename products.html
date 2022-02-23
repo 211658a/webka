@@ -9,8 +9,12 @@
     <script src="https://kit.fontawesome.com/d2f38c219d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/jpeg" href="./MonkeyBusiness-logos.jpeg" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </head>
 <body>
+
     <header>
         <div class="header-background" id="hbg">
           <div id="nav" class="sticky-nav">
@@ -78,6 +82,12 @@
         </div>
         <div class="col-6 col-md-4">        
             <h1 class="align">Products</h1>
+            <div class="align2">
+              <button type="button" class="btn btn-light" onclick="playAudio()">Hello</button>
+            <audio id="myAudio">
+              <source src="./077775035-hello-woman.m4a">
+            </audio>
+            </div>
         </div>
         <div class="col-6 col-md-4">    
             <blockquote class="blockquote text-right">
@@ -90,14 +100,29 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./120k.jpeg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem; margin: 2rem;">
+            <!-- Trigger the Modal -->
+            <img id="myImg" src="120k.jpeg" alt="Snow" style="width:100%;height:250px">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+
+            <div class="card-body" id="first">
               <h5 class="card-title">120K</h5>
               <p class="card-text">
-                <dt class="column-table">Processor</dt>
-                <dd class="column-table-2">Intel Core i3 4130 OEM</dd>
+                <dt class="column-table">Processor:</dt>
+                <dd class="column-table-2"></dd>
                 
                 <dt class="column-table">RAM</dt>
                 <dd class="column-table-2">DDR3 DIMM 8Gb/1600MHz PC12800 Kingston HyperX </dd>
@@ -113,33 +138,63 @@
           </div>
         </div>
 
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./150.jpg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
-              <h5 class="card-title">150K</h5>
-              <p class="card-text">
-                <dt class="column-table">Processor</dt>
-                <dd class="column-table-2">AMD Ryzen 3 2200G OEM</dd>
+        <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem; margin: 2rem;">
+            <!-- Trigger the Modal -->
+            <img id="myImg02" src="./150.jpg" alt="Snow" style="width:100%;height:250px">
+
+            <!-- The Modal -->
+            <div id="myModal02" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img02">
+
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption02"></div>
+            </div>              
               
-                <dt class="column-table">RAM</dt>
-                <dd class="column-table-2">AMD Radeon R7 Performance Series [R748G2606U2S-U] 8 GB</dd>
-              </p>
-              <button type="button" class="btn btn-success">
-                BUY 
-              </button>
-            
-              <button type="button" class="btn btn-primary">
-                Add To Card<i class="fas fa-shopping-basket"></i>
-              </button>
+              <div class="card-body" id="second">
+                <h5 class="card-title">150K</h5>
+                <p class="card-text">
+                  <dt class="column-table">Processor</dt>
+                  <dd class="column-table-2">AMD Ryzen 3 2200G OEM</dd>
+                
+                  <dt class="column-table">RAM</dt>
+                  <dd class="column-table-2">AMD Radeon R7 Performance Series [R748G2606U2S-U] 8 GB</dd>
+                </p>
+                <button type="button" class="btn btn-success">
+                  BUY 
+                </button>
+              
+                <button type="button" class="btn btn-primary">
+                  Add To Card<i class="fas fa-shopping-basket"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./180.jpg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem; margin: 2rem;">
+            <!-- Trigger the Modal -->
+            <img id="myImg03" src="./180.jpg" alt="Snow" style="width:100%;height:250px">
+
+            <!-- The Modal -->
+            <div id="myModal03" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img03">
+
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption03"></div>
+            </div>
+            
+            <div class="card-body" id="third">
               <h5 class="card-title">180K</h5>
               <p class="card-text">
                 <dt class="column-table">Processor</dt>
@@ -159,15 +214,25 @@
           </div>
         </div>
 
-      </div>
-    </div>   
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem; margin: 2rem;">
+          <!-- Trigger the Modal -->
+          <img id="myImg04" src="./225.jpeg" alt="Snow" style="width:100%;height:250px">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./225.jpeg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
+          <!-- The Modal -->
+          <div id="myModal04" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img04">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption04"></div>
+          </div>
+
+            <div class="card-body" id="fourth">
               <h5 class="card-title">225K</h5>
               <p class="card-text">
                 <dt class="column-table">Processor</dt>
@@ -187,10 +252,25 @@
           </div>
         </div>
 
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./250.jpg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem; margin: 2rem;">
+          <!-- Trigger the Modal -->
+          <img id="myImg05" src="./250.jpg" alt="Snow" style="width:100%;height:250px">
+
+          <!-- The Modal -->
+          <div id="myModal05" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img05">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption05"></div>
+          </div>
+
+            <div class="card-body" id="fifth">
               <h5 class="card-title">250K</h5>
               <p class="card-text">
                 <dt class="column-table">Processor</dt>
@@ -210,10 +290,25 @@
           </div>
         </div>
 
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./300.jpg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem; margin: 2rem;">
+          <!-- Trigger the Modal -->
+          <img id="myImg06" src="./300.jpg" alt="Snow" style="width:100%;height:250px">
+
+          <!-- The Modal -->
+          <div id="myModal06" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img06">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption06"></div>
+          </div>
+
+            <div class="card-body" id="sixth">
               <h5 class="card-title">300K</h5>
               <p class="card-text">
                 <dt class="column-table">Processor</dt>
@@ -233,15 +328,25 @@
           </div>
         </div>
 
-      </div>
-    </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem; margin: 2rem;">
+          <!-- Trigger the Modal -->
+          <img id="myImg07" src="./400.jpg" alt="Snow" style="width:100%;height:250px">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div class="card" style="width: 18rem;">
-            <img src="./400.jpg" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
+          <!-- The Modal -->
+          <div id="myModal07" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img07">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption07"></div>
+          </div>
+
+            <div class="card-body" id="seventh">
               <h5 class="card-title">400K</h5>
               <p class="card-text">
                 <dt class="column-table">Processor</dt>
@@ -260,17 +365,21 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
-    <hr>
+    <div class="w3-container" style="text-align: center;">
+      <p><button type="button" class="btn btn-success" onclick="w3.hide('iframe, h2, img')">Show only products(without images)</button></p>
+      <hr>
+      </div>
 
     <div class="conteiner">
       <div class="row">
-        <div class="col-sm">
-          <h1 class="align2">
+        <div class="col-md-6">
+          <h2 class="align2">
             The most popular products
-          </h1>
+          </h2>
           <div class="slideshow-container">
   
             <!-- Full-width images with number and caption text -->
@@ -301,16 +410,16 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
-        </div> 
-        <div class="col-sm">
-          <h1 class="align2">
+        </div>
+        <div class="col-md-6">
+          <h2 class="align2">
             Recommended store
-          </h1>
-          <iframe style="margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80188.50122536546!2d71.3641096213999!3d51.09202529724079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245857dfb0ada47%3A0xecac42be5eb41d2c!2z0JHQtdC70YvQuSDQktC10YLQtdGA!5e0!3m2!1sru!2skz!4v1645553166817!5m2!1sru!2skz" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </h2>
+          <iframe style="margin-top: 30px; max-width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80188.50122536546!2d71.3641096213999!3d51.09202529724079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245857dfb0ada47%3A0xecac42be5eb41d2c!2z0JHQtdC70YvQuSDQktC10YLQtdGA!5e0!3m2!1sru!2skz!4v1645553166817!5m2!1sru!2skz" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
         </div>
       </div>
     </div>
-    
 
     <footer class="bg-dark text-center text-white" style="background-color: #1f2933" id="footer-1">
             <div class="container p-4">  
@@ -428,6 +537,10 @@
             </div>
         
     </footer>
-    <script src="./snippet1.js"></script>
+
+    <script src="./snippet12.js"></script>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>
