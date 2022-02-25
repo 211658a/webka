@@ -52,3 +52,22 @@ var x = document.getElementById("myAudio");
 function playAudio() { 
   x.play(); 
 }
+
+
+$("#button").click(function(){
+    window.scrollTo(0, 0);
+    animate({ scrollTop: 0 }, "slow");
+    });
+
+function bigImg(x) {
+    x.style.height = "300px";
+    x.style.width = "300px";
+    }
+      
+function normalImg(x) {
+    x.style.height = "250px";
+    x.style.width = "250px";
+    }
+function myFunction() {
+  alert("We are ready to answer for each question!");
+}
